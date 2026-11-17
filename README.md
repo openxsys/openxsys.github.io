@@ -13,7 +13,7 @@ The official bilingual website, real-use showcase and domain-redirect source for
 
 GitHub Pages publishes `main` from the repository root to **https://openxsys.com/**. `.nojekyll` keeps the site buildless.
 
-GitHub Pages supports one apex domain per site. The redirect at **https://openxsys.cn/** is deployed from the `site-redirect` branch of the personal project repository. That branch contains only deployment output; its source is maintained here under `redirects/`. Both services are managed as one website, without a separate redirect repository.
+GitHub Pages supports one apex domain per site. The redirect at **https://openxsys.cn/** uses the personal project repository as a deployment endpoint. Its manual `Publish domain redirect` workflow checks out this website repository and publishes only `redirects/`; the source is maintained here, without a separate redirect repository.
 
 Serve this repository with any local static HTTP server to preview it. The root page preserves the language query and section hash when opening `site/index.html`.
 

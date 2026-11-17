@@ -13,7 +13,7 @@
 
 GitHub Pages 从 `main` 分支根目录发布到 **https://openxsys.com/**。`.nojekyll` 保持纯静态部署。
 
-GitHub Pages 每个站点支持一个主域名。**https://openxsys.cn/** 的转发使用个人项目仓库的 `site-redirect` 分支部署。该分支只存放部署产物，源码统一保存在这里的 `redirects/` 中；不再单独维护转发仓库。
+GitHub Pages 每个站点支持一个主域名。**https://openxsys.cn/** 借用个人项目仓库作为转发部署出口。手动运行其中的 `Publish domain redirect` 工作流，就会读取本官网仓库并只发布 `redirects/`；源码统一保存在这里，不再单独维护转发仓库。
 
 使用任意本地静态 HTTP 服务即可预览。根页面跳转到 `site/index.html` 时会保留语言参数和章节锚点。
 
