@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Explore the thinking · OpenXSys</title><meta name="description" content="Explore the systems thinking behind OpenXSys. Discover methods and compose routes for your own questions."><link rel="stylesheet" href="site.css"></head><body>
+<header class="wrap top"><a class="mark" data-home href="index.html">Open<span>X</span>Sys</a><span class="ver">0.0.1 ALPHA PREVIEW</span><nav aria-label="Main navigation"><a href="#build"><span data-l="en">Route builder</span><span data-l="zh">路线构建器</span></a><a href="#methods"><span data-l="en">Methods</span><span data-l="zh">方法库</span></a><a class="github-link" href="https://github.com/gengshupeng/open-x-sys" target="_blank" rel="noopener noreferrer" aria-label="OpenXSys on GitHub">GitHub ↗</a><button class="lang" id="lang" type="button" aria-label="Switch language">Chinese</button><a class="nav-cta" data-home href="index.html"><span data-l="en">Home ↗</span><span data-l="zh">首页 ↗</span></a></nav></header>
+<main id="top"><div class="wrap explore-intro"><a class="back" data-home href="index.html"><span data-l="en">← Back to the homepage</span><span data-l="zh">← 返回首页</span></a><p class="eyebrow"><span data-l="en">For the curious</span><span data-l="zh">留给想深入了解的你</span></p><h1><span data-l="en">Go inside the thinking.</span><span data-l="zh">走进系统思维的内部。</span></h1><p class="lede"><span data-l="en">In everyday use, describe your goal and let the AI choose its approach. Here, you can explore the methods, learn how they connect, or compose a route of your own.</span><span data-l="zh">平时使用，说出目标，让 AI 自己选择思考方式。这里供你进一步了解方法之间的联系、学习思考过程，也可以亲自组合一条路线。</span></p></div>
+<section id="journey"><div class="wrap">
+  <p class="eyebrow"><span data-l="en">How it works</span><span data-l="zh">它怎样工作</span></p>
+  <h2><span data-l="en">Explore how the AI thinks.</span><span data-l="zh">看看 AI 怎样展开思考。</span></h2>
+  <p class="lede"><span data-l="en">Everything follows the path a person takes with any system. Enter anywhere: the system quietly does whatever earlier stages your request depends on. New evidence sends you back.</span><span data-l="zh">一切都沿着一个人面对任何系统都会走的路展开。从哪里进入都行：系统会悄悄补上你的请求所依赖的前面阶段。新的证据会把你带回前面。</span></p>
+  <div class="stages" id="stages"></div>
+  <div class="phases">
+    <div><span data-l="en">See how it really works</span><span data-l="zh">看得透</span></div>
+    <div><span data-l="en">Know what to do</span><span data-l="zh">想得清</span></div>
+    <div><span data-l="en">Make it real</span><span data-l="zh">做得成</span></div>
+    <div><span data-l="en">Keep getting better</span><span data-l="zh">越用越强</span></div>
+  </div>
+</div></section>
+
+<section id="build"><div class="wrap">
+  <p class="eyebrow"><span data-l="en">Playground · route builder</span><span data-l="zh">试验场 · 路线构建器</span></p>
+  <h2><span data-l="en">Want to compose a route? Try it here.</span><span data-l="zh">想亲自组合方法？在这里试一试。</span></h2>
+  <p class="lede"><span data-l="en">A route is a sequence of methods. Name your subject, choose methods in the order you want, or start from a ready route. You can also ask one plain question and let the AI choose the methods.</span><span data-l="zh">路线是一串方法。写下你的对象，按问题选择并组合方法，或者从一条现成的路线开始。你也可以只说自己的问题，让 AI 自主选择方法。</span></p>
+  <div class="builder">
+    <div>
+      <div class="field">
+        <label for="subject"><span data-l="en">Your subject</span><span data-l="zh">你的对象</span></label>
+        <input id="subject" type="text" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="group"><h3><span data-l="en">READY ROUTES</span><span data-l="zh">现成的路线</span></h3><div class="chips" id="presets"></div></div>
+      <div id="groups"></div>
+    </div>
+    <div class="out card" aria-live="polite">
+      <h3><span data-l="en">Your route</span><span data-l="zh">你的路线</span></h3>
+      <div class="strip" id="strip"></div>
+      <p class="note" id="hint"></p>
+      <p class="result" id="result"></p>
+      <div class="row">
+        <button class="btn" id="copy" type="button"><span data-l="en">Copy the sentence</span><span data-l="zh">复制这句话</span></button>
+        <button class="btn ghost" id="clear" type="button"><span data-l="en">Clear</span><span data-l="zh">清空</span></button>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="methods"><div class="wrap">
+  <p class="eyebrow"><span data-l="en">The method library</span><span data-l="zh">方法库</span></p>
+  <h2><span data-l="en">Twenty-three methods. Built to work together.</span><span data-l="zh">二十三种思考方法，按问题组合。</span></h2>
+  <p class="lede"><span data-l="en">Each method is one well-known way of asking a question. The seven marked ★ offer starting points for exploring a question. Seven advanced lenses and a library of ten system patterns deepen any stage.</span><span data-l="zh">每个方法，都是提出一个问题的一种广为人知的方式。标 ★ 的七个适合从感兴趣的问题开始探索。七个进阶视角和一个包含十个模式的系统模式库，可以加深任何阶段。</span></p>
+  <div class="tablewrap"><table id="mtable"></table></div>
+  <p class="note" style="margin-top:1rem" id="lenses"></p>
+</div></section>
+
+<section id="masters"><div class="wrap">
+  <p class="eyebrow"><span data-l="en">Think like the best</span><span data-l="zh">像高手一样思考</span></p>
+  <h2><span data-l="en">Run the famous ways great practitioners work, by name.</span><span data-l="zh">按名字，运行顶尖实践者著名的做法。</span></h2>
+  <p class="lede"><span data-l="en">Each route keeps its own order, names its source, and says where OpenXSys simplifies it.</span><span data-l="zh">每条路线保持它自己的顺序，写明来源，并说明 OpenXSys 在哪里做了简化。</span></p>
+  <div class="grid" id="mgrid"></div>
+</div></section>
+</main><footer><div class="wrap"><b>OpenXSys</b><a data-home href="index.html"><span data-l="en">Ask one question. Let AI handle the complexity. ↗</span><span data-l="zh">只需问一句，让 AI 承担复杂性。↗</span></a><span><a href="https://github.com/gengshupeng/open-x-sys" target="_blank" rel="noopener noreferrer">GitHub ↗</a> · #OpenXSys · MIT</span></div></footer>
+<script>
+(function () {
+  "use strict";
+  var STAGES = [
+    { en: "See", zh: "看懂", qe: "What is it, and how does it work?", qz: "它是什么？怎么运转的？", m: [
+      { id: "open", f: "open(x)", en: "Open", zh: "开启", pe: "Open a system for ___.", pz: "给 ___ 开启一个系统。" },
+      { id: "xray", f: "xray(x)", en: "X-ray", zh: "透视", pe: "Show me what really drives ___.", pz: "帮我看透 ___ 背后真正起作用的结构。", star: 1 },
+      { id: "flow", f: "flow(x)", en: "Flow", zh: "流动", pe: "Follow the money through ___.", pz: "跟着钱走一遍 ___。" },
+      { id: "loops", f: "loops(x)", en: "Loops", zh: "回路", pe: "What keeps ___ going, or holding it back?", pz: "是什么让 ___ 一直这样运转，或者一直卡住？" },
+      { id: "estimate", f: "estimate(x)", en: "Size It", zh: "估算", pe: "Roughly how big is ___, really?", pz: "___ 大概有多大？" } ] },
+    { en: "Explain", zh: "解释", qe: "Why is it like this?", qz: "它为什么会这样？", m: [
+      { id: "first_principles", f: "first_principles(x)", en: "First Principles", zh: "第一性原理", pe: "Break ___ down to what must be true, and rebuild it.", pz: "把 ___ 拆到一定成立的东西，再重新构建。", star: 1 },
+      { id: "trace", f: "trace(x)", en: "Trace", zh: "溯源", pe: "How did ___ become what it is today?", pz: "___ 是怎么一步步变成今天这样的？" },
+      { id: "bottleneck", f: "bottleneck(x)", en: "Bottleneck", zh: "瓶颈", pe: "What really limits ___?", pz: "真正限制 ___ 的是什么？" },
+      { id: "incentives", f: "incentives(x)", en: "Incentives", zh: "激励", pe: "Who gains what from ___ staying the way it is?", pz: "谁能从 ___ 保持现状中得到什么？" },
+      { id: "shift", f: "shift(x, as)", en: "Shift", zh: "换视角", pe: "Show me ___ through the eyes of ___.", pz: "站在 ___ 的位置看 ___。" } ] },
+    { en: "Anticipate", zh: "预见", qe: "What will happen? What if?", qz: "接下来会怎样？如果……呢？", m: [
+      { id: "whatif", f: "whatif(x, if)", en: "What-if", zh: "推演", pe: "What happens to ___ if ___?", pz: "如果 ___，___ 会怎样？" },
+      { id: "second_order", f: "second_order(x, action)", en: "And Then What?", zh: "二阶思考", pe: "If we ___, and then what?", pz: "如果我们 ___，然后呢？" },
+      { id: "invert", f: "invert(x, goal)", en: "Invert", zh: "反过来想", pe: "What would make ___ fail?", pz: "什么会让 ___ 失败？", star: 1 },
+      { id: "connect", f: "connect(a, b)", en: "Connect", zh: "连接", pe: "How does ___ affect ___?", pz: "___ 会怎样影响 ___？" } ] },
+    { en: "Focus", zh: "找准", qe: "Where does effort matter most?", qz: "在哪里用力最有效？", m: [
+      { id: "leverage", f: "leverage(x, goal)", en: "Leverage", zh: "杠杆", pe: "Where would a small change in ___ matter most?", pz: "在 ___ 里，哪个小改变最重要？", star: 1 },
+      { id: "vital_few", f: "vital_few(x)", en: "Vital Few", zh: "关键少数", pe: "Which 20% of ___ drives 80% of the result?", pz: "___ 里哪 20% 决定了 80% 的结果？" } ] },
+    { en: "Decide", zh: "选择", qe: "What is the best way for us?", qz: "对我们来说，最好的做法是什么？", m: [
+      { id: "practice", f: "practice(system, goal)", en: "Best Practice", zh: "最佳实践", pe: "Given what I have, what is the best way to ___?", pz: "以我现在的条件，___ 最好的做法是什么？", star: 1 },
+      { id: "weigh", f: "weigh(options)", en: "Weigh", zh: "权衡", pe: "Should I ___ or ___?", pz: "我该 ___ 还是 ___？" } ] },
+    { en: "Create", zh: "创造", qe: "Make it real.", qz: "把它做出来。", m: [
+      { id: "make", f: "make(x, form)", en: "Make", zh: "做成作品", pe: "Turn this into a ___.", pz: "把它做成一个 ___。", star: 1 },
+      { id: "design", f: "design(goal)", en: "Design", zh: "设计", pe: "Design a ___ that ___.", pz: "帮我设计一个能 ___ 的 ___。" },
+      { id: "build", f: "build(capability)", en: "Build", zh: "搭建能力", pe: "Help me build the ability to ___.", pz: "帮我搭建做 ___ 的能力。" } ] },
+    { en: "Improve", zh: "改进", qe: "Did it work? What now?", qz: "有效吗？接下来呢？", m: [
+      { id: "review", f: "review(x)", en: "Review", zh: "复盘", pe: "Let's review ___: what happened, and what should change?", pz: "我们来复盘一下 ___：发生了什么，应该改什么？", star: 1 },
+      { id: "watch", f: "watch(x, signal)", en: "Watch", zh: "盯住", pe: "Keep an eye on ___ and tell me when ___.", pz: "帮我盯着 ___，一旦 ___ 就告诉我。" } ] }
+  ];
+  var LENSES = [
+    { id: "problem_type", en: "Problem Type", zh: "问题类型" }, { id: "bound", en: "Boundary", zh: "边界" },
+    { id: "scale", en: "Scale", zh: "尺度" }, { id: "viable", en: "Viability", zh: "存续" },
+    { id: "variety", en: "Variety", zh: "应变" }, { id: "emerge", en: "Emergence", zh: "涌现" },
+    { id: "contradiction", en: "Contradiction", zh: "矛盾" }
+  ];
+  var PATTERNS = {
+    en: "flywheel, network effect, compounding, success to the successful, limits to growth, fixes that fail, shifting the burden, escalation, tragedy of the commons, the moving bottleneck",
+    zh: "飞轮、网络效应、复利、强者愈强、成长上限、饮鸩止渴、舍本逐末、恶性竞争、公地悲剧、移动的瓶颈"
+  };
+  var EVERYDAY = [
+    { en: "Understand it", zh: "看懂它", r: ["open", "xray", "loops", "make"] },
+    { en: "Explain a surprise", zh: "解释一个意外", r: ["xray", "trace", "incentives", "make"] },
+    { en: "Solve a recurring problem", zh: "解决反复出现的问题", r: ["xray", "loops", "bottleneck", "leverage", "practice", "build", "review"] },
+    { en: "Make a decision", zh: "做一个决定", r: ["shift", "whatif", "second_order", "invert", "weigh"] },
+    { en: "Learn something deeply", zh: "深入学一样东西", r: ["open", "first_principles", "trace", "make"] }
+  ];
+  var MASTERS = [
+    { en: "Musk's algorithm", zh: "马斯克五步法", se: "Question every requirement → delete → simplify → accelerate → automate last", sz: "质疑每一项要求 → 删除 → 简化 → 加速 → 最后才自动化", ye: "Run Musk's algorithm on ___.", yz: "用马斯克五步法过一遍 ___。", src: "Isaacson, Elon Musk (2023)" },
+    { en: "The Toyota way", zh: "丰田之道", se: "Go and see → ask why five times → countermeasure → standardize → improve again", sz: "去现场看 → 问五个为什么 → 对策 → 标准化 → 再改善", ye: "Run the Toyota way on ___.", yz: "用丰田之道过一遍 ___。", src: "Ohno, Toyota Production System (1978)" },
+    { en: "Goldratt's five focusing steps", zh: "高德拉特五步聚焦", se: "Identify the constraint → exploit it → subordinate everything to it → elevate it → repeat", sz: "找出约束 → 充分利用它 → 让一切服从它 → 提升它 → 重复", ye: "Run Goldratt's five focusing steps on ___.", yz: "用高德拉特五步聚焦过一遍 ___。", src: "Goldratt, The Goal (1984)" },
+    { en: "Munger's checklist", zh: "芒格清单", se: "Invert → follow the incentives → use many models → think a level deeper → decide", sz: "反过来想 → 跟着激励走 → 用多个模型 → 多想一层 → 决定", ye: "Run Munger's checklist on ___.", yz: "用芒格清单过一遍 ___。", src: "Munger (1986, 1995); Marks (2011)" },
+    { en: "Deming's cycle", zh: "戴明循环", se: "Plan → do → study → act", sz: "计划 → 执行 → 研究 → 处置", ye: "Run a Deming cycle on ___.", yz: "对 ___ 跑一轮戴明循环。", src: "Deming, Out of the Crisis (1986); The New Economics (1993)" },
+    { en: "Boyd's loop", zh: "博伊德循环", se: "Observe → orient → decide → act, fast", sz: "观察 → 判断 → 决策 → 行动，要快", ye: "Run Boyd's loop on ___.", yz: "用博伊德循环过一遍 ___。", src: "Boyd, briefings (1970s–1990s)" },
+    { en: "Feynman's technique", zh: "费曼学习法", se: "Explain it simply → find the gaps → go back to the source → simplify again", sz: "用简单的话讲出来 → 找到漏洞 → 回到源头 → 再简化", ye: "Use Feynman's technique to teach me ___.", yz: "用费曼学习法教会我 ___。", src: "Named after Feynman's teaching" },
+    { en: "Shell's scenarios", zh: "壳牌情景规划", se: "Driving forces → key uncertainties → several futures → signals to watch", sz: "驱动力量 → 关键不确定性 → 几种未来 → 要盯住的信号", ye: "Run Shell-style scenarios on ___.", yz: "给 ___ 做一次壳牌式的情景规划。", src: "Wack, Harvard Business Review (1985)" }
+  ];
+  var SAY = [
+    { en: "Open a system for ___.", zh: "给 ___ 开启一个系统。" },
+    { en: "Break ___ down to first principles.", zh: "把 ___ 拆到第一性原理。" },
+    { en: "Open a system for me.", zh: "给我自己开启一个系统。" }
+  ];
+  var T = {
+    copy: { en: "copy", zh: "复制" }, copied: { en: "copied", zh: "已复制" },
+    empty: { en: "Pick methods, or a ready route.", zh: "挑几个方法，或者选一条现成的路线。" },
+    many: { en: "Let each step serve the question. Revisit earlier methods as evidence changes.", zh: "让每一步服务于当前问题；有新证据时，也可以回到前面调整。" },
+    remove: { en: "Click a step to remove it.", zh: "点一下某一步，可以把它去掉。" },
+    stage: { en: "Stage", zh: "阶段" }, method: { en: "Method", zh: "方法" }, fn: { en: "Function", zh: "函数" }, say: { en: "Example prompt", zh: "提示词示例" },
+    lenses: { en: "Lenses", zh: "视角" }, patterns: { en: "Patterns", zh: "模式" }, ph: { en: "a company, a project, a decision, your own work", zh: "一家公司、一个项目、一个决定、你自己的工作" },
+    use: { en: "Use this route", zh: "用这条路线" },
+    install: { en: "Please install OpenXSys Skill from https://github.com/gengshupeng/open-x-sys\nUse the installation method for the AI tool you are running in, install the complete English edition, and check that it is available.\nTell me when it is ready. I will then ask my own question.", zh: "请从项目仓库 https://github.com/gengshupeng/open-x-sys 安装 OpenXSys Skill。\n请根据你当前所在的 AI 工具，安装完整中文版并完成可用性检查。\n安装完成后告诉我已经准备就绪，我会直接说出自己的问题。" }
+  };
+  var root = document.documentElement, lang = "en", route = [], master = null;
+  var byId = {};
+  STAGES.forEach(function (s) { s.m.forEach(function (m) { byId[m.id] = m; }); });
+  LENSES.forEach(function (l) { byId[l.id] = l; });
+  function $(id) { return document.getElementById(id); }
+  function t(k) { return T[k][lang]; }
+  function name(o) { return o[lang]; }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function copyText(text, done) {
+    function ok() { if (done) done(); }
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(ok, fallback); } else { fallback(); }
+    function fallback() {
+      var ta = el("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); ok(); } catch (e) { /* the sentence stays visible to select by hand */ }
+      document.body.removeChild(ta);
+    }
+  }
+  function subject() { var v = $("subject").value.trim(); return v || "___"; }
+  function sentence() {
+    var s = subject();
+    if (master) { return (lang === "en" ? master.ye : master.yz).replace("___", s); }
+    if (!route.length) { return (lang === "en" ? "Open a system for ___." : "给 ___ 开启一个系统。").replace("___", s); }
+    var names = route.map(function (id) { return name(byId[id]); }).join(" → ");
+    return lang === "en"
+      ? "Open a system for " + s + ". Use this route: " + names + "."
+      : "给 " + s + " 开启一个系统。按这条路线走：" + names + "。";
+  }
+  function renderOut() {
+    var strip = $("strip"); strip.textContent = "";
+    if (master) {
+      strip.appendChild(el("span", "step", name(master)));
+      $("hint").textContent = lang === "en" ? master.se : master.sz;
+    } else if (!route.length) {
+      strip.appendChild(el("span", "note", t("empty")));
+      $("hint").textContent = "";
+    } else {
+      route.forEach(function (id, i) {
+        if (i) strip.appendChild(el("span", "arr", "→"));
+        var b = el("button", "step", name(byId[id])); b.type = "button";
+        b.addEventListener("click", function () { route.splice(i, 1); render(); });
+        strip.appendChild(b);
+      });
+      $("hint").textContent = route.length > 5 ? t("many") : t("remove");
+    }
+    $("result").textContent = sentence();
+  }
+  function chip(o, star) {
+    var b = el("button", "chip" + (star ? " star" : "") + (!master && route.indexOf(o.id) >= 0 ? " on" : ""), name(o)); b.type = "button";
+    b.addEventListener("click", function () {
+      master = null; var i = route.indexOf(o.id);
+      if (i >= 0) route.splice(i, 1); else route.push(o.id);
+      render();
+    });
+    return b;
+  }
+  function renderGroups() {
+    var g = $("groups"); g.textContent = "";
+    STAGES.forEach(function (s, i) {
+      var box = el("div", "group"); box.appendChild(el("h3", null, (i + 1) + " · " + name(s).toUpperCase()));
+      var c = el("div", "chips"); s.m.forEach(function (m) { c.appendChild(chip(m, m.star)); }); box.appendChild(c); g.appendChild(box);
+    });
+    var lb = el("div", "group"); lb.appendChild(el("h3", null, t("lenses").toUpperCase()));
+    var lc = el("div", "chips"); LENSES.forEach(function (l) { lc.appendChild(chip(l, 0)); }); lb.appendChild(lc); g.appendChild(lb);
+    var p = $("presets"); p.textContent = "";
+    EVERYDAY.forEach(function (r) {
+      var b = el("button", "chip", name(r)); b.type = "button";
+      b.addEventListener("click", function () { master = null; route = r.r.slice(); render(); }); p.appendChild(b);
+    });
+    MASTERS.forEach(function (m) {
+      var b = el("button", "chip" + (master === m ? " on" : ""), name(m)); b.type = "button";
+      b.addEventListener("click", function () { master = m; route = []; render(); }); p.appendChild(b);
+    });
+  }
+  function renderStatic() {
+    document.title = lang === "zh" ? "深入探索 · OpenXSys" : "Explore the thinking · OpenXSys";
+    document.querySelectorAll("[data-home]").forEach(function(a){a.href="index.html?lang="+lang;});
+    var st = $("stages"); st.textContent = "";
+    STAGES.forEach(function (s, i) {
+      var d = el("div", "stage"); d.appendChild(el("em", null, String(i + 1))); d.appendChild(el("b", null, name(s)));
+      d.appendChild(el("span", null, lang === "en" ? s.qe : s.qz)); st.appendChild(d);
+    });
+    var tb = $("mtable"); tb.textContent = "";
+    var hr = el("tr"); ["stage", "method", "fn", "say"].forEach(function (k) { hr.appendChild(el("th", null, t(k))); }); tb.appendChild(hr);
+    STAGES.forEach(function (s) {
+      s.m.forEach(function (m, j) {
+        var tr = el("tr");
+        tr.appendChild(el("td", "st", j ? "" : name(s)));
+        tr.appendChild(el("td", null, (m.star ? "★ " : "") + name(m)));
+        tr.appendChild(el("td", "fn", m.f));
+        tr.appendChild(el("td", null, lang === "en" ? m.pe : m.pz));
+        tb.appendChild(tr);
+      });
+    });
+    $("lenses").textContent = t("lenses") + ": " + LENSES.map(name).join(lang === "en" ? " · " : " · ") + ".  " + t("patterns") + ": " + PATTERNS[lang] + (lang === "en" ? "." : "。");
+    var mg = $("mgrid"); mg.textContent = "";
+    MASTERS.forEach(function (m) {
+      var c = el("div", "card route"); c.appendChild(el("h3", null, name(m)));
+      c.appendChild(el("p", null, lang === "en" ? m.se : m.sz)); c.appendChild(el("p", "src", m.src));
+      var b = el("button", "btn ghost", t("use")); b.type = "button";
+      b.addEventListener("click", function () { master = m; route = []; render(); $("build").scrollIntoView(); });
+      c.appendChild(b); mg.appendChild(c);
+    });
+    $("subject").placeholder = t("ph");
+    $("lang").textContent = lang === "en" ? "Chinese" : "English";
+  }
+  function render() { renderGroups(); renderOut(); }
+  function setLang(l) {
+    lang = l; root.setAttribute("data-lang", l); root.setAttribute("lang", l === "zh" ? "zh-CN" : "en");
+    try { localStorage.setItem("oxs-lang", l); } catch (e) { /* storage may be unavailable */ }
+    renderStatic(); render();
+  }
+  $("lang").addEventListener("click", function () { setLang(lang === "en" ? "zh" : "en"); });
+  $("subject").addEventListener("input", renderOut);
+  $("clear").addEventListener("click", function () { route = []; master = null; render(); });
+  $("copy").addEventListener("click", function () {
+    var b = $("copy"), keep = b.innerHTML;
+    copyText(sentence(), function () { b.textContent = t("copied"); setTimeout(function () { b.innerHTML = keep; }, 1400); });
+  });
+  function copyAction(button, value) {
+    var keep=button.innerHTML;
+    copyText(value,function(){button.textContent=t("copied");setTimeout(function(){button.innerHTML=keep;},1600);});
+  }
+  var saved = null;
+  try { saved = localStorage.getItem("oxs-lang"); } catch (e) { saved = null; }
+  var requested = new URLSearchParams(window.location.search).get("lang");
+  if(requested==="zh-CN"){requested="zh";}
+  var first = requested || saved || ((navigator.language || "").toLowerCase().indexOf("zh") === 0 ? "zh" : "en");
+  setLang(first === "zh" ? "zh" : "en");
+})();
+</script></body></html>

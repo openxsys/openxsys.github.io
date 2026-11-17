@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="768" viewBox="0 0 400 768" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">从看懂到改进：七个阶段，四种能力</title>
+<desc id="desc">看懂、解释、预见让你看得透；找准、选择帮你想得清；创造让你做得成；改进让你越用越强。根据问题选择起点、组合方法，新的证据会让你回到前面的阶段。</desc>
+<defs>
+ <marker id="arrow" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1L6 4L1 7" fill="none" stroke="#7b909d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ <marker id="return" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1L6 4L1 7" fill="none" stroke="#b77b32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<style>text{font-family:system-ui,-apple-system,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif} .step{font-weight:650;fill:#183642}.note{fill:#536b78}.flow{fill:none;stroke:#7b909d;stroke-width:1.6;marker-end:url(#arrow)}.feedback{fill:none;stroke:#b77b32;stroke-width:1.6;stroke-dasharray:5 5;marker-end:url(#return)}</style>
+<rect x=".5" y=".5" width="399" height="767" rx="16" fill="#fafcfd" stroke="#dbe5ea"/>
+<text x="28" y="37" font-size="20" font-weight="650" fill="#183642">七个阶段，四种能力</text>
+<text x="28" y="62" class="note" font-size="12.5">从你的问题出发，随新的证据调整。</text>
+<rect x="48" y="88" width="324" height="200" rx="12" fill="#edf5fa" stroke="#3c6c8a" stroke-opacity=".25"/>
+<text x="64" y="115" font-size="17" font-weight="650" fill="#3c6c8a">看得透</text>
+<path class="flow" d="M210 291V306"/>
+<rect x="48" y="310" width="324" height="146" rx="12" fill="#fff5e7" stroke="#a06b2c" stroke-opacity=".25"/>
+<text x="64" y="337" font-size="17" font-weight="650" fill="#a06b2c">想得清</text>
+<path class="flow" d="M210 459V474"/>
+<rect x="48" y="478" width="324" height="93" rx="12" fill="#edf6f0" stroke="#347253" stroke-opacity=".25"/>
+<text x="64" y="505" font-size="17" font-weight="650" fill="#347253">做得成</text>
+<path class="flow" d="M210 574V589"/>
+<rect x="48" y="593" width="324" height="93" rx="12" fill="#f2eff9" stroke="#685c89" stroke-opacity=".25"/>
+<text x="64" y="620" font-size="17" font-weight="650" fill="#685c89">越用越强</text>
+<rect x="62" y="129" width="296" height="42" rx="8" fill="white" stroke="#3c6c8a" stroke-opacity=".24"/>
+<text x="79" y="156" font-size="12" fill="#3c6c8a">01</text><text x="218" y="157" text-anchor="middle" class="step" font-size="20">看懂</text>
+<path class="flow" d="M210 173V180"/>
+<rect x="62" y="182" width="296" height="42" rx="8" fill="white" stroke="#3c6c8a" stroke-opacity=".24"/>
+<text x="79" y="209" font-size="12" fill="#3c6c8a">02</text><text x="218" y="210" text-anchor="middle" class="step" font-size="20">解释</text>
+<path class="flow" d="M210 226V233"/>
+<rect x="62" y="235" width="296" height="42" rx="8" fill="white" stroke="#3c6c8a" stroke-opacity=".24"/>
+<text x="79" y="262" font-size="12" fill="#3c6c8a">03</text><text x="218" y="263" text-anchor="middle" class="step" font-size="20">预见</text>
+<rect x="62" y="351" width="296" height="42" rx="8" fill="white" stroke="#a06b2c" stroke-opacity=".24"/>
+<text x="79" y="378" font-size="12" fill="#a06b2c">04</text><text x="218" y="379" text-anchor="middle" class="step" font-size="20">找准</text>
+<path class="flow" d="M210 395V402"/>
+<rect x="62" y="404" width="296" height="42" rx="8" fill="white" stroke="#a06b2c" stroke-opacity=".24"/>
+<text x="79" y="431" font-size="12" fill="#a06b2c">05</text><text x="218" y="432" text-anchor="middle" class="step" font-size="20">选择</text>
+<rect x="62" y="519" width="296" height="42" rx="8" fill="white" stroke="#347253" stroke-opacity=".24"/>
+<text x="79" y="546" font-size="12" fill="#347253">06</text><text x="218" y="547" text-anchor="middle" class="step" font-size="20">创造</text>
+<rect x="62" y="634" width="296" height="42" rx="8" fill="white" stroke="#685c89" stroke-opacity=".24"/>
+<text x="79" y="661" font-size="12" fill="#685c89">07</text><text x="218" y="662" text-anchor="middle" class="step" font-size="20">改进</text>
+<path class="feedback" d="M48 655H22V150H60"/>
+<text x="28" y="718" class="note" font-size="13">你可以从任何阶段开始。</text><text x="28" y="741" class="note" font-size="12.5">按问题选择与组合，随新证据回到前面的阶段。</text>
+</svg>

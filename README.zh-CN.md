@@ -1,11 +1,22 @@
-# OpenXSys 网站重定向
+# OpenXSys 官网
 
-[English](README.md)
+[English](README.md) · [官网](https://openxsys.com/?lang=zh) · [OpenXSys Skill 主仓库](https://github.com/gengshupeng/open-x-sys)
 
-本仓库提供跳转到 OpenXSys 正式官网 <https://openxsys.com/> 的轻量页面。主项目位于 <https://github.com/openxsys/open-x-sys>。
+这里统一维护 OpenXSys 中英文官网、真实使用案例和域名转发源码。
 
-GitHub Pages 从 `main` 分支根目录发布。自定义域名记录在 `CNAME` 中；DNS 配置完成后，GitHub 同时处理 `www` 别名。
+| 目录 | 用途 |
+|---|---|
+| `site/` | 首页、语言切换和可选的路线探索页 |
+| `gallery/ai-industry/` | 中英文 AI 产业研究真实案例 |
+| `assets/readme/` | 案例预览图和示意图 |
+| `redirects/` | 备用域名转发源码 |
 
-入口通过浏览器跳转到正式官网，保留路径、查询参数与页面锚点。`404.html` 为其他路径提供相同的跳转。关闭 JavaScript 的浏览器可通过页面刷新或链接进入官网首页。这是静态跳转页，不提供 HTTP 301 重定向服务。
+GitHub Pages 从 `main` 分支根目录发布到 **https://openxsys.com/**。`.nojekyll` 保持纯静态部署。
 
-根域名使用 GitHub Pages 的 A 记录，`www` 的 CNAME 指向 `openxsys.github.io`。HTTPS 由 GitHub Pages 提供。
+GitHub Pages 每个站点支持一个主域名。**https://openxsys.cn/** 的转发使用个人项目仓库的 `site-redirect` 分支部署。该分支只存放部署产物，源码统一保存在这里的 `redirects/` 中；不再单独维护转发仓库。
+
+使用任意本地静态 HTTP 服务即可预览。根页面跳转到 `site/index.html` 时会保留语言参数和章节锚点。
+
+Skill、安装说明、问题反馈、贡献和版本发布统一在[项目主仓库](https://github.com/gengshupeng/open-x-sys)维护。
+
+MIT · #OpenXSys
